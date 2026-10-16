@@ -58,13 +58,13 @@ footer .links{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
   <p class="lead">网页端能做的日常操作，在这里都能完成，而且更顺手。</p>
   <div class="grid">
     <div class="card"><b><i>⏱</i>定时任务</b><p>搜索、筛选、自定义视图和标签；一键运行或停止，长按多选批量操作，预览接下来 3 次执行时间。</p></div>
-    <div class="card"><b><i>📜</i>实时日志</b><p>运行日志实时刷新、自动跟到底部，关键字高亮，错误行标红，可复制、分享、另存为。</p></div>
+    <div class="card"><b><i>📜</i>实时日志</b><p>运行日志实时刷新，超长日志也稳定跟到底部，上滑查看时自动暂停跟随；关键字高亮，错误行标红，可复制、分享、另存为。</p></div>
     <div class="card"><b><i>🔑</i>环境变量</b><p>默认脱敏显示，批量启用、禁用、删除，拖动排序，JSON 导入导出。</p></div>
-    <div class="card"><b><i>📦</i>订阅与依赖</b><p>公开仓库、私有仓库和单文件订阅；Node.js、Python3、Linux 依赖安装，实时查看日志。</p></div>
+    <div class="card"><b><i>📦</i>订阅与依赖</b><p>公开仓库、私有仓库和单文件订阅；Node.js、Python3、Linux 依赖安装，实时查看日志；依赖列表先显示离线缓存，面板核对较慢时也不用干等。</p></div>
     <div class="card"><b><i>📁</i>脚本与配置</b><p>浏览、搜索、编辑脚本，查找替换，一键添加为定时任务；直接编辑 config.sh 等配置文件。</p></div>
     <div class="card"><b><i>📊</i>概览与桌面卡片</b><p>今日成功率、7/30 天趋势、失败任务和服务器资源；三种尺寸桌面卡片，失败时本地提醒。</p></div>
     <div class="card"><b><i>🛠</i>面板系统</b><p>系统设置、通知推送 24 种渠道、Open API 应用、数据备份、两步验证、重启面板。</p></div>
-    <div class="card"><b><i>🖥</i>多台服务器</b><p>账号密码或 Client ID 登录，支持两步验证、子路径和自签名证书，多台服务器一键切换。</p></div>
+    <div class="card"><b><i>🖥</i>多台服务器</b><p>账号密码或 Open API（Client ID）登录，支持两步验证、子路径和自签名证书；Open API 应用缺少的权限会在对应页面明确提示。多台服务器一键切换。</p></div>
   </div>
 </div></section>
 
@@ -76,6 +76,17 @@ footer .links{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
     <div class="card"><b><i>🎨</i>个性化</b><p>浅色、深色或跟随系统，6 种主题色，渐变或自定义背景，毛玻璃效果；简体中文 / English。</p></div>
     <div class="card"><b><i>📱</i>多设备适配</b><p>手机用悬浮胶囊底栏、左右滑动切换；平板与折叠屏用侧边导航和宽屏双列布局。</p></div>
     <div class="card"><b><i>🔒</i>隐私优先</b><p>不含第三方 SDK，开发者不收集任何个人信息；密码和令牌加密保存在本机，断网时也能查看上次同步的数据。</p></div>
+  </div>
+</div></section>
+
+<!-- 最近更新 -->
+<section><div class="wrap">
+  <h2>最近更新</h2>
+  <p class="lead">当前版本 1.2.18，可在应用内“设置 → 关于 → 检查更新”升级。</p>
+  <div class="row">
+    <div class="card"><b><i>📜</i>1.2.18</b><p>修复运行中任务的长日志不自动刷新；实时日志轮询不再使用离线缓存，网络波动时不会显示旧日志。</p></div>
+    <div class="card"><b><i>🔐</i>1.2.15 – 1.2.17</b><p>Open API 登录时自动检测各模块权限：无权限的页面只显示“当前登录账号无此权限”，相关操作置灰，“更多”页同步提示。</p></div>
+    <div class="card"><b><i>📦</i>1.2.14</b><p>依赖管理加载更快：先显示上次的列表，再在后台向面板核对最新安装状态。</p></div>
   </div>
 </div></section>
 
